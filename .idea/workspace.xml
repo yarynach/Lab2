@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f4637a3-21e4-45cd-8aef-94e948a61f02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/yaryna/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yaryna/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yaryna/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/yaryna/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yaryna/book/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +83,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/yaryna/Main.java</url>
-          <line>74</line>
+          <line>87</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

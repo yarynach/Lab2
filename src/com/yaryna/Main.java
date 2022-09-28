@@ -1,3 +1,6 @@
+/**
+ * package with all materials
+ */
 package com.yaryna;
 import com.yaryna.book.Book;
 
@@ -7,18 +10,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]){
-
-        Book book1 = new Book(1,"Harry Potter","J.K.Rowling","ABABAHALAMAHA",2002,323,200);
-        Book book2 = new Book(2,"Internat","S.Zhadan","KSD",2021,323,300);
-
-
-       Book[] books = CreateArr(2);
-       //PrintByAuthor(books);
-      // PrintByPublisher(books);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the size of array you want to input:");
+        int size = scan.nextInt();
+        Book[] books = CreateArr(size);
+        PrintByAuthor(books);
+        PrintByPublisher(books);
         PrintByYear(books);
 
 
     }
+
+    /**
+     * Method that create array of class Book
+     * and check input
+     * @param size of array
+     * @return array of the class BooK
+     */
     public static Book[] CreateArr(int size) {
         Book[] arr = new Book[size];
         Scanner scan = new Scanner(System.in);
@@ -67,6 +75,11 @@ public class Main {
         return arr;
     }
 
+    /**
+     * Method that show us books of
+     * the certain author
+     * @param arr array of the clas Book
+     */
     public static void PrintByAuthor(Book[] arr){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter name of the author to get books:");
@@ -77,6 +90,11 @@ public class Main {
             }
         }
     }
+
+    /**
+     * Method that show the book of the specific publisher
+     * @param arr array of the class Book
+     */
     public static void PrintByPublisher(Book[] arr){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter name of the publisher to get books:");
@@ -87,6 +105,11 @@ public class Main {
             }
         }
     }
+
+    /**
+     * Method that show us book with the year bigger than user input
+     * @param arr array of the class Book
+     */
     public static void PrintByYear(Book[] arr){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a year to see books published after that year:");
